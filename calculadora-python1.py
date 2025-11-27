@@ -33,3 +33,5 @@ elif opc == "*":
 # Caso a operação digitada não seja nenhuma das previstas
 else:
     print("Operação inválida!")
+
+#Jupter
