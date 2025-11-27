@@ -1,19 +1,35 @@
-nmr1 = float(input("Qual o primeiro número? ")) 
-nmr2 = float(input("Qual o segundo número? ")) 
-opc = str(input("Qual a operação? (+, -, * ou /)")) 
+# Calculadora simples em Python
 
+# Lê o primeiro número informado pelo usuário
+nmr1 = float(input("Qual o primeiro número? "))
+
+# Lê o segundo número informado pelo usuário
+nmr2 = float(input("Qual o segundo número? "))
+
+# Lê a operação desejada (+, -, * ou /)
+opc = input("Qual a operação? (+, -, * ou /) ")
+
+# Verifica qual operação foi escolhida
 if opc == "+":
-    print (f"A soma é: {nmr1 + nmr2}") 
+    # Soma os dois números
+    print(f"A soma é: {nmr1 + nmr2}")
 
 elif opc == "-":
-    print (f"A subtração é: {nmr1 - nmr2}") 
+    # Subtrai o segundo número do primeiro
+    print(f"A subtração é: {nmr1 - nmr2}")
 
 elif opc == "/":
-    if nmr2 == 0: print("Não é possível dividir por zero!") 
+    # Verifica se o segundo número é zero antes de dividir
+    if nmr2 == 0:
+        print("Não é possível dividir por zero!")
     else:
-        print(f"A divisão é: {nmr1 / nmr2}") 
+        # Realiza a divisão normalmente
+        print(f"A divisão é: {nmr1 / nmr2}")
 
-elif opc == "*":  
-    print (f"A multiplicação é: {nmr1 * nmr2}") 
-    
-else: print ("Operação inválida!")
+elif opc == "*":
+    # Multiplica os dois números
+    print(f"A multiplicação é: {nmr1 * nmr2}")
+
+# Caso a operação digitada não seja nenhuma das previstas
+else:
+    print("Operação inválida!")
